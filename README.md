@@ -1,2 +1,2 @@
 # angol.github.io
-coursera model assignment
+coursera model-3-assignment
