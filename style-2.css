@@ -1,0 +1,116 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    background-color: yellow;
+    border-bottom: 2px solid black;
+    overflow: hidden;
+    position: relative;
+}
+header .logoName{
+    padding-top: 10px;
+    float: left;
+    font-weight: bolder;
+}
+header .navBar{
+   position: sticky;
+}
+.navBar ul li{
+    list-style: none;
+    font-weight: 900;
+    width: 100%;
+}
+.navBar ul li:nth-child(1):hover{
+    background-color: aqua;
+    color: white;
+    transition: all 0.3s ease;
+}
+.navBar ul li:nth-child(2):hover{
+    background-color: rgb(97, 42, 165);
+    color: white;
+    transition: all 0.3s ease;
+}
+.navBar ul li:nth-child(3):hover{
+    background-color: rgb(119, 12, 12);
+    color: white;
+    transition: all 0.3s ease;
+}
+.row{
+    background-color: beige;
+}
+
+/* ====================MEDIA QUERIES=========== */
+
+/* ===============FOR COMPUTER SCRRENS============== */
+@media (min-width:992px){
+    .fa-bars{
+        position: absolute;
+        top: 20%;
+        display: none;
+        color: transparent;
+    }
+    
+    header .navBar{
+        display: none;
+    }
+}
+/* ==============TABLET VIEWS=============== */
+@media (min-width:769px) and (max-width:991px){
+    header .navBar{
+        display: none;
+    }
+    .fa-bars{
+        position: absolute;
+        top: 20%;
+        display: none;
+        color: transparent;
+    }
+    
+}
+/* =============MOBILE SCREENS================ */
+@media (max-width:768px){
+    .fa-bars{
+        display: none;
+        background: transparent;
+        position: absolute;
+        top: 3%;
+        right: 2%;
+        font-size: 30px;
+    }
+    header .navBar{
+        padding-top: 30px;
+        height: 2px;
+        width: 100%;
+    }
+    header .logoName{
+        padding-top: 10px;
+    }
+    /* Add this style to make navbar elements take up full width */
+    .navBar ul li {
+        list-style: none;
+        font-weight: 900;
+        width: 100%;
+        padding: 10px; /* Adjust the padding as needed */
+        margin: 0; /* Remove any default margin */
+    }
+
+    /* Add this style to remove any default spacing */
+    .navBar ul {
+        padding: 0;
+        margin: 0;
+    }
+
+
+    .hidemenu{
+        height: 185px;
+    }
+    .navBar ul li:nth-child(1){
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        width: 100%;
+
+    }
+}
